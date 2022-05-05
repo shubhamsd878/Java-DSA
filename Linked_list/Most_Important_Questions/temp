@@ -1,0 +1,61 @@
+public ListNode rev(ListNode revHead, ListNode lastNode, int n){
+
+        ListNode prev = null;
+        ListNode curr = revHead;
+
+        for(int i=0; i<3; i++){
+        // while(curr!= null){
+            ListNode next = curr.next;
+            
+            if(i ==0 ){
+                curr.next = lastNode;
+            }
+            if(i != 0){
+                curr.next = prev;
+            }
+                //update
+            prev = curr;
+            curr = next;
+        }
+        // revHead.next = lastNode;
+        return prev;
+    
+    }
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        
+        if(head == null || head.next == null){
+            return head;
+        }
+        
+        int sz = 0;
+        ListNode curr = head;
+        while(curr!= null){
+            curr=curr.next;
+            sz++;
+        }
+        
+        if(left == (sz - right + 1)){
+            return head;
+        }
+        
+        ListNode firstNode = head;
+        int i=1;
+        while(i<(left - 1)){
+            firstNode = firstNode.next;
+            i++;
+        }
+        
+        ListNode revHead= firstNode.next;
+
+        ListNode lastNode = head;
+        i = 0;
+        while(i < (sz - right + 1)){
+            lastNode = lastNode.next;
+            i++;
+        }
+        
+        int n = (sz - right + 1) - left + 1;
+        
+        firstNode.next = this.rev( revHead, lastNode, n);
+        return head;
+    }

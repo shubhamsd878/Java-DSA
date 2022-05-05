@@ -1,0 +1,1 @@
+Java Collection framework returns value for push, pop, peek.
