@@ -111,6 +111,7 @@ public class _01_Tree_Everything{
         }
     }
 
+    // --------------------------------------------------
 
     // Q.1 count of Nodes
     public static int countOfNodes(Node root){
@@ -120,7 +121,7 @@ public class _01_Tree_Everything{
         int leftNode = countOfNodes(root.left);
         int rightNode = countOfNodes(root.right);
 
-        return leftNode + rightNode + 1;
+        return 1 + leftNode + rightNode;
     }
     
 
@@ -133,7 +134,7 @@ public class _01_Tree_Everything{
         int rightNodeSum = sumOfNodes(root.right);
 
         // return root.data + sum;
-        return leftNodeSum + rightNodeSum + root.data;
+        return root.data + leftNodeSum + rightNodeSum;
     }
 
 
@@ -173,24 +174,24 @@ public class _01_Tree_Everything{
         // BuildTree get root
         Node root = b.buildTree(arr);
 
-        // Traversals
+        // -------------------------Traversals
         // preOrder(root);       
         // inOrder(root);       
         // postOrder(root);       
         levelOrder(root); 
         
-        // IMPORTANT Questions
+        // ---------------------IMPORTANT Questions
         // Q.1 count of Nodes
         // System.out.println(countOfNodes(root));
         
         // Q.2 sum of Nodes
-        // System.out.println(sumOfNodes(root));
+        System.out.println(sumOfNodes(root));
 
         // Q.3 Height of Nodes
         // System.out.println(heightOfNodes(root));
 
         // Q.4 Diameter of Tree: Approach 1
-        System.out.println(diameter(root));
+        // System.out.println(diameter(root));
 
     }
 }

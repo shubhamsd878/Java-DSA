@@ -23,10 +23,11 @@ public class _02_Adjancy_List {
         addEdge(adj, 0, 2);
         addEdge(adj, 0, 3);
         addEdge(adj, 1, 2);
+        addEdge(adj, 4, 1);
 
-        // printing 
+        // printing
         for(int i =0; i<v; i++){
-            System.out.print("Vertex " + v + ": ");
+            System.out.print("Vertex " + i + ": ");
             for(int j=0; j < adj.get(i).size(); j++){
                 System.out.print(adj.get(i).get(j) + " -> ");
             }
