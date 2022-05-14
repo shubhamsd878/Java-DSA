@@ -5,7 +5,7 @@ package Graphs_AnujBhaiya;
 import java.util.*;
 
 
-public class _06_IMPORTANT_Cycle_in_directed {
+public class _07_IMPORTANT_Cycle_in_directed {
     static void addEdge(ArrayList<ArrayList<Integer>> a, int source, int destination){
         a.get(source).add(destination);
         // destination to source not required as this is directed graph
@@ -33,7 +33,7 @@ public class _06_IMPORTANT_Cycle_in_directed {
         visited[S] = true;
         DFSvisited[S] = true;
 
-        System.out.println(S);
+        // System.out.println(S);
         
         // for(Integer neighbour: adj.get(v)){
         for(int i = 0; i < adj.get(S).size(); i++){

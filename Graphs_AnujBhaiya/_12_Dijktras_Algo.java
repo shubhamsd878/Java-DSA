@@ -46,7 +46,7 @@ class weightCompare implements Comparator<Node>{
 
 } 
 
-public class _10_Dijktras_Algo {
+public class _12_Dijktras_Algo {
     
     static void shortestPath(int S, ArrayList<ArrayList<Node>> adj, int v ){
         

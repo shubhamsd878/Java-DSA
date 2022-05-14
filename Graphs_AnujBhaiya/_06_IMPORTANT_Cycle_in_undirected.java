@@ -3,7 +3,7 @@ package Graphs_AnujBhaiya;
 import java.util.*;
 
 
-public class _05_IMPORTANT_Cycle_in_unidirected {
+public class _06_IMPORTANT_Cycle_in_undirected {
     static void addEdge(ArrayList<ArrayList<Integer>> a, int source, int destination){
         a.get(source).add(destination);
         a.get(destination).add(source);

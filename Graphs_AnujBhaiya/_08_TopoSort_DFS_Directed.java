@@ -4,7 +4,7 @@ package Graphs_AnujBhaiya;
 import java.util.*;
 
 
-public class _07_TopoSort_DFS_Directed {
+public class _08_TopoSort_DFS_Directed {
     static void addEdge(ArrayList<ArrayList<Integer>> a, int source, int destination){
         a.get(source).add(destination);
         // destination to source not required as this is directed graph
@@ -24,6 +24,7 @@ public class _07_TopoSort_DFS_Directed {
             }
         }
 
+        // printing
         while(!st.isEmpty()){
             System.out.println(st.pop());
         }

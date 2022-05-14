@@ -3,7 +3,7 @@ package Graphs_AnujBhaiya;
 import java.util.*;
 
 
-public class _08_Kahns_Algo_TopoSort_BFS_Directed {
+public class _09_Kahns_Algo_TopoSort_BFS_Directed {
     static void addEdge(ArrayList<ArrayList<Integer>> a, int source, int destination){
         a.get(source).add(destination);
         // destination to source not required as this is directed graph

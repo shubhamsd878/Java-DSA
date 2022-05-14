@@ -1,10 +1,9 @@
-// IMPORTANT not traversing disconnected graphs probably correct
-// in DFS we use stack in comparison to BFS
 package Graphs_AnujBhaiya;
 
 import java.util.*;
 
-public class _04_DFS {
+public class _05_DFS_stack {
+
     static void addEdge(ArrayList<ArrayList<Integer>> a, int source, int destination){
         a.get(source).add(destination);
         a.get(destination).add(source);
@@ -12,29 +11,22 @@ public class _04_DFS {
 
     // DFS two methods --> Stack + Queue  &&  Recursion
     static void DFS (ArrayList<ArrayList<Integer>> adj, int S, int v){      //s = Source (initial vertex),  v = no. of vertex
-        Stack<Integer> stack = new Stack<Integer>();
+        
         boolean visited[] = new boolean [v];
+        DFSutil(adj, visited, S, v);
+    }
 
-        // for loop for 
-        for(int i = 0; i < v; i++ ){
-            visited[i] = false;
-        }
+    static void DFSutil(ArrayList<ArrayList<Integer>> adj, boolean[] visited, int S, int v){
 
-        stack.add(S);
         visited[S] = true;
+        // first print
+        System.out.println( S );
 
-        while(!stack.isEmpty()){
-            int u = stack.pop();
-            System.out.println( u );
-
-            for(int i = 0; i<adj.get( u ).size(); i++){
-                int neighbour = adj.get( u ).get(i);
-
-                if( visited[neighbour] == false){
-                    stack.add(neighbour);
-                    visited[neighbour] = true;
-                }
-
+        for(int i = 0; i < adj.get(S).size(); i++){
+            int neighbour = adj.get(S).get(i);
+            
+            if(visited[neighbour] == false){
+                DFSutil(adj, visited, neighbour, v);
             }
         }
     }
@@ -52,10 +44,10 @@ public class _04_DFS {
         }
 
         // adding edges
-        addEdge(adj, 0, 1);
+        // addEdge(adj, 0, 1);
         addEdge(adj, 0, 2);
         addEdge(adj, 1, 2);
-        addEdge(adj, 2, 0);
+        // addEdge(adj, 2, 0);
         addEdge(adj, 0, 3);
         addEdge(adj, 3, 4);
         // addEdge(adj, 3, 3);

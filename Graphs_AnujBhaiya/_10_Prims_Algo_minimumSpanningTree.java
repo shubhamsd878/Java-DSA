@@ -17,7 +17,7 @@ class Node{
     int getW () { return weight; }
 }
 
-public class _08_Prims_Algo_minimumSpanningTree{
+public class _10_Prims_Algo_minimumSpanningTree{
     
     static void prims_Algo(ArrayList<ArrayList<Node>> adj, int v ){
         int key[] = new int[v];

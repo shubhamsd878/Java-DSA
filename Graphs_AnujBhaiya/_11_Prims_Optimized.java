@@ -1,5 +1,5 @@
 package Graphs_AnujBhaiya;
 
-public class _09_Prims_Optimized {
+public class _11_Prims_Optimized {
     
 }
