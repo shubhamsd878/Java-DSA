@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _10_remove_all_duplicates {
     static boolean map[] = new boolean[26];

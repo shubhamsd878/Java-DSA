@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _09_move_all_x_to_end_of_string {
     

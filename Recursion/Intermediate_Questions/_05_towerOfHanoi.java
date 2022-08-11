@@ -1,5 +1,5 @@
 // formula for no. of step  =  (2^n) -1
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _05_towerOfHanoi {
     static void towerOfHanoi(int n, String src, String helper, String dest){

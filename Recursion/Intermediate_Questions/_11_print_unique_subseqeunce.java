@@ -1,6 +1,6 @@
 // for unique subsequences use HashSet, else remove HashSet
 // number of subsequences = (2^n) - 1
-package Recursion;
+package Recursion.Intermediate_Questions;
 import java.util.*;
        
 public class _11_print_unique_subseqeunce {

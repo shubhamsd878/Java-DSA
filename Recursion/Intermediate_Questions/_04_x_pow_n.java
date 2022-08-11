@@ -2,7 +2,7 @@
 // logic in the bottom makes 
 // O(log n) --> stack height (log n)
 
-package Intermediate_Questions;
+package Recursion.Intermediate_Questions;
 
 public class _04_x_pow_n {
     static int calcPow(int x, int n){

@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _12_keypad_combination {
     // map 

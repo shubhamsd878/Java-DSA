@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _08_check_if_sorted_array {
     

@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _07_first_and_last_occurence_of_string {
     static int firstidx = -1, lastidx = -1;

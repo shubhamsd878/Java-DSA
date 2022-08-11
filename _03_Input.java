@@ -5,7 +5,7 @@ public class _03_Input {
     public static void main(String[] args)
    {
         Scanner sc = new Scanner(System.in);
-        String Name = sc.nextline();
+        String Name = sc. ();
         System.out.println(Name);
    } 
 }

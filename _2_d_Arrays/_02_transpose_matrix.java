@@ -8,7 +8,7 @@ public class _02_transpose_matrix {
         // could also be done without  tranpose array.
 
         Scanner sc= new Scanner(System.in);
-        {13,14,15,16} };
+        // {13,14,15,16} };
         
         for(int i =0; i<4;i++)
         {

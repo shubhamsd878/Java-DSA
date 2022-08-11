@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Intermediate_Questions;
 
 public class _06_reverse_of_string {
     static void revString(String a, int idx){
